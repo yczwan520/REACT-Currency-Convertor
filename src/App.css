@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.input {
+  padding: 0.25rem;
+  margin: 20px;
+  width: 5em;
+}
+
+.form1 {
+  margin: 20px;
+}
+.form2 {
+  margin: 20px;
+}
+.date {
+  font-weight: bold;
+}
