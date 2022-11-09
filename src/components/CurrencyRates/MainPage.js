@@ -1,9 +1,6 @@
 import React from "react";
-// import { Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import style from "./ExchangeCurrency.module.scss";
-
-// import ExchangeCurrency from "./components/CurrencyRates/ExchangeCurrency";
 
 const MainPage = (props) => {
   return (
@@ -14,7 +11,6 @@ const MainPage = (props) => {
         <Link to="/convertor">
           <button>
             Get started
-            {/* <Icon name="right arrow" inverted /> */}
           </button>
         </Link>
       </div>
