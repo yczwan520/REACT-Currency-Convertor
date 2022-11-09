@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import { button } from "semantic-ui-react";
 
 const Goback = (props) => {
   const navigate = useNavigate();
