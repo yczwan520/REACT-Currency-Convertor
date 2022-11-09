@@ -64,7 +64,7 @@ const ExchangeCurrency = (props) => {
   }
 
   return (
-    <div>
+    <div className={style.convertor}>
       <div>
         <h1>Currency Convertor</h1>
         <div class={style.date_picker}>

@@ -1,0 +1,15 @@
+ul {
+  display: flex;
+  padding: 20px;
+  font-size: large;
+  justify-content: space-evenly;
+  background-color: deepskyblue;
+  list-style: none;
+  :global {
+    li {
+      .nav {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,9 +1,29 @@
 body {
   margin: 0;
+  margin-left: 0px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+
+.main_page {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  :global {
+    h2 {
+      text-align: center;
+    }
+    Link {
+      align-self: center;
+    }
+  }
+}
+.convertor {
+  padding-left: 250px;
 }
 
 .exchange_rate {
