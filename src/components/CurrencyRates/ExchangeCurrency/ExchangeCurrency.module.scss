@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  margin-left: 0px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+
+.main_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  :global {
+    h2 {
+      text-align: center;
+    }
+    Link {
+      align-self: center;
+    }
+  }
+}
+.convertor {
+  padding-left: 250px;
+}
+
+.exchange_rate {
+  margin-top: 15px;
+}
+.date_picker {
+  display: flex;
+  flex-direction: column;
+  :global {
+    p {
+      margin: 15px 0px 5px 0px;
+      font-weight: bold;
+    }
+    .ant-picker {
+      border-radius: 4px;
+      width: 250px;
+    }
+  }
+}
+
+.exchange_input {
+  display: flex;
+  :global {
+    .ant-select {
+      align-self: flex-end;
+    }
+
+    .input {
+      p {
+        margin: 15px 0px 5px 0px;
+        font-weight: bold;
+      }
+      Input {
+        border-radius: 4px;
+        width: 250px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

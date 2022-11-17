@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoBack page renders the GoBack page 1`] = `
+<div>
+  <div>
+    <p>
+      This is the best currency convertor in the world! Convert foreign dollars to Canadian dollar
+    </p>
+    <p>
+      Let's try it NOW!
+    </p>
+    <button>
+      Go Back
+    </button>
+  </div>
+</div>
+`;

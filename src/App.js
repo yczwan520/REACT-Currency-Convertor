@@ -2,8 +2,8 @@ import React from "react";
 import Nav from "./components/nav/Nav";
 import { Routes, Route } from "react-router-dom";
 import MainPage from "./components/CurrencyRates/MainPage";
-import ExchangeCurrency from "./components/CurrencyRates/ExchangeCurrency";
-import Goback from "./components/CurrencyRates/Goback";
+import ExchangeCurrency from "./components/CurrencyRates/ExchangeCurrency/ExchangeCurrency";
+import Goback from "./components/CurrencyRates/GoBack/Goback";
 // import { Exception } from "sass";
 
 const App = () => {
