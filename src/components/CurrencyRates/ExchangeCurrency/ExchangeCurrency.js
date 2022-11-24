@@ -6,6 +6,7 @@ import style from "./ExchangeCurrency.module.scss";
 import { DatePicker, Space } from "antd";
 import { Input } from "antd";
 import "antd/dist/antd.css"; //
+import { getExchangeRate } from "../../../APIs/ExchangeRate";
 
 const { Option } = Select;
 const ExchangeCurrency = (props) => {
@@ -29,24 +30,22 @@ const ExchangeCurrency = (props) => {
     fromAmount = (amount / rate).toFixed(4);
   }
 
-  const fetchRate = () => {
-    setLoading(true);
-    // const res = fetch(
-    //   `https://www.bankofcanada.ca/valet/observations/FXCAD${currency}?start_date=${
-    //     props.date ? props.date : date
-    //   }&end_date=${props.date ? props.date : date}`
-    // )
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     if (data.observations.length) {
-    //       setRate(data.observations[0][`FXCAD${currency}`].v);
-    //     } else {
-    //       message.info("There is no exchange rate on this date!");
-    //       setRate("");
-    //     }
-    //     setLoading(false);
-    //   })
-    //   .catch((error) => console.log(error));
+  const fetchRate = async () => {
+    try {
+      setLoading(true);
+      const data = await getExchangeRate(currency, date);
+      if (data.observations.length) {
+        setRate(data.observations[0][`FXCAD${currency}`].v);
+        setLoading(false);
+      } else {
+        message.info("There is no exchange rate on this date!");
+        setRate("");
+        setLoading(false);
+      }
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+    }
   };
 
   useEffect(() => {

@@ -7,6 +7,7 @@ const config = {
   moduleNameMapper: {
     "\\.(scss|sass|css|svg)$": "identity-obj-proxy",
   },
+  transformIgnorePatterns: ["node_modules/(?!axios)"],
 };
 
 module.exports = config;
